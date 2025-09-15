@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T17:28:50.099030" rpa="false" schemaversion="5">
+<suite id="s1" name="noOrganization" source="C:\Users\saran\Downloads\Starterfiles\Starterfiles\Lab10\UAT-Lab10-001\table2\testNo2\noOrganization.robot">
+<test id="s1-t1" name="Open Registration Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:28:50.571731" level="INFO">Opening browser 'edge' to base url 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:28:50.571200" elapsed="2.069773"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-15T17:28:52.641820" elapsed="0.000650"/>
+</kw>
+<status status="PASS" start="2025-09-15T17:28:50.569328" elapsed="2.073747"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="15">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:28:52.919058" level="INFO">Current location is 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:28:52.647466" elapsed="0.271910"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:28:53.571323" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-15T17:28:53.571711" level="FAIL">Title should have been 'Event Registration' but was 'Error response'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-09-15T17:28:52.920193" elapsed="0.654921">Title should have been 'Event Registration' but was 'Error response'.</status>
+</kw>
+<status status="FAIL" start="2025-09-15T17:28:52.644353" elapsed="0.931491">Title should have been 'Event Registration' but was 'Error response'.</status>
+</test>
+<test id="s1-t3" name="Register Success No Organization Info" line="19">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:28:53.582149" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2025-09-15T17:28:54.274360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-15T17:28:54.274742" level="FAIL">Element with locator 'name=firstname' not found.</msg>
+<arg>name=firstname</arg>
+<arg>Somsri</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-15T17:28:53.581449" elapsed="0.697672">Element with locator 'name=firstname' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-15T17:28:54.279942" elapsed="0.000085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>somsri@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-15T17:28:54.280504" elapsed="0.000096"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=phone</arg>
+<arg>081-001-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-15T17:28:54.281019" elapsed="0.000111"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-15T17:28:54.281585" elapsed="0.000085"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-09-15T17:28:54.282087" elapsed="0.000065"/>
+</kw>
+<status status="FAIL" start="2025-09-15T17:28:53.580395" elapsed="0.702364">Element with locator 'name=firstname' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-15T17:28:50.102059" elapsed="4.184846"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="noOrganization" id="s1" pass="1" fail="2" skip="0">noOrganization</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

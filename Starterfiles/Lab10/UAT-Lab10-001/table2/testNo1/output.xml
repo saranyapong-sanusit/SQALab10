@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T17:24:47.314333" rpa="false" schemaversion="5">
+<suite id="s1" name="showRegisTest" source="C:\Users\saran\Downloads\Starterfiles\Starterfiles\Lab10\UAT-Lab10-001\table2\testNo1\showRegisTest.robot">
+<test id="s1-t1" name="Open Registration Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:24:47.783329" level="INFO">Opening browser 'edge' to base url 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:24:47.782774" elapsed="2.040545"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-15T17:24:49.824724" elapsed="0.000922"/>
+</kw>
+<status status="PASS" start="2025-09-15T17:24:47.780700" elapsed="2.045535"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="15">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:24:49.839237" level="INFO">Current location is 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:24:49.829957" elapsed="0.009539"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:24:50.010284" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-15T17:24:50.010668" level="FAIL">Title should have been 'Event Registration' but was 'Error response'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-09-15T17:24:49.841059" elapsed="0.173229">Title should have been 'Event Registration' but was 'Error response'.</status>
+</kw>
+<status status="FAIL" start="2025-09-15T17:24:49.828499" elapsed="0.186438">Title should have been 'Event Registration' but was 'Error response'.</status>
+</test>
+<status status="FAIL" start="2025-09-15T17:24:47.317198" elapsed="2.701531"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="showRegisTest" id="s1" pass="1" fail="1" skip="0">showRegisTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

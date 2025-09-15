@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T17:47:20.900117" rpa="false" schemaversion="5">
+<suite id="s1" name="invalidPhoneNumber" source="C:\Users\saran\Downloads\Starterfiles\Starterfiles\Lab10\UAT-Lab10-002\invalidPhoneNumber\testNo2\invalidPhoneNumber.robot">
+<test id="s1-t1" name="Open Registration Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:21.365605" level="INFO">Opening browser 'edge' to base url 'http://localhost:7272/Lab10/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:47:21.365082" elapsed="2.111373"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-15T17:47:23.477349" elapsed="0.000691"/>
+</kw>
+<status status="PASS" start="2025-09-15T17:47:21.363035" elapsed="2.115588"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="15">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:23.749701" level="INFO">Current location is 'http://localhost:7272/Lab10/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:47:23.485614" elapsed="0.264374"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:24.010858" level="INFO">Page title is 'Event Registration'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-15T17:47:23.750733" elapsed="0.260415"/>
+</kw>
+<status status="PASS" start="2025-09-15T17:47:23.482157" elapsed="0.529798"/>
+</test>
+<test id="s1-t3" name="Empty First Name" line="19">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:24.016318" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<arg>name=firstname</arg>
+<arg>Somsri</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:24.015660" elapsed="0.937263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:24.954315" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<arg>name=lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:24.953742" elapsed="0.893650"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:25.848426" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<arg>name=organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:25.847991" elapsed="0.872498"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:26.722033" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>somsri@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:26.721249" elapsed="0.893434"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:27.616085" level="INFO">Typing text '1234' into text field 'name=phone'.</msg>
+<arg>name=phone</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:27.615544" elapsed="0.879539"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:28.495996" level="INFO">Clicking button 'Register'.</msg>
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T17:47:28.495630" elapsed="0.883844"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:29.639241" level="INFO">Current location is 'http://localhost:7272/Lab10/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-09-15T17:47:29.380357" elapsed="0.259185"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:29.898321" level="INFO">Page title is 'Event Registration'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-15T17:47:29.640370" elapsed="0.258229"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-15T17:47:31.364433" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-15T17:47:31.364822" level="FAIL">Page should have contained text '*Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</msg>
+<arg>*Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-09-15T17:47:29.899403" elapsed="1.469646">Page should have contained text '*Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-09-15T17:47:24.014368" elapsed="7.356153">Page should have contained text '*Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</test>
+<status status="FAIL" start="2025-09-15T17:47:20.902754" elapsed="10.472036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="invalidPhoneNumber" id="s1" pass="2" fail="1" skip="0">invalidPhoneNumber</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
